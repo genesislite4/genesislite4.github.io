@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Subscription Form</title>
+    <style>
+
+        nav a {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 25px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* Change link color on hover */
+        nav a:hover {
+            color: #666;
+        }
+
+        /* Add margin to the top of the div containing links */
+        .nav-links {
+            margin-top: 25px; /* Adjust this value as needed */
+            margin-left: 55px;
+        }
+
+        .nav-link {
+            margin-top: 30px; /* Adjust this value as needed */
+            margin-left: 63px;
+        }
+        .nav-links2 {
+            position: relative;
+            transform: translateY(50%);
+            bottom: -50px; 
+            margin-left: 1100px;
+        }
+
+        .nav-links3 {
+            position: absolute;
+            transform: translateY(50%);
+            bottom: 95.6%; /* Adjust this value as needed */
+
+            margin-left: 110px;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        @font-face {
+            font-family: 'Orbitron';
+            src: url('images/Exo/static/Exo2-Medium.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: rgb(34, 34, 34);
+            background-image: url('images/ball.jpg'); /* Set background image */
+            background-size: cover; /* Cover the entire background */
+            background-repeat: no-repeat; /* Don't repeat the background image */
+            background-position: center; /* Center the background image */
+        }
+        
+        .framer-custom-input {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: auto;
+            outline: none;
+            border: none;
+            padding: 12px 16px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            background: rgba(224, 54, 54, 0);
+            color: rgb(255, 255, 255);
+            box-shadow: inset 0px 1px rgb(119, 85, 204), inset 1px 1px rgba(0, 0, 0, 0.1);
+        }
+
+        .subscribe-button {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25%;
+            height: auto;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            margin-top: 10px;
+            border-radius: 4px;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            background: rgb(242, 242, 242);
+            color: rgb(34, 34, 34);
+            box-shadow: none;
+            font-family: 'Orbitron', sans-serif;
+            margin-left: 40%;
+        }
+
+        .form-container {
+            width: 50%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding-top: 20%;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 7%;
+            left: 78%;
+            transform: translateX(-50%);
+            color: #ffffff;
+            font-size: 70px;
+            font-family: 'Orbitron', sans-serif;
+            z-index: 3;
+            width: 100%;
+        }
+
+        .text-overlay2 {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffffff;
+            font-size: 35px;
+            font-family: 'Orbitron', sans-serif;
+            z-index: 3;
+        }
+        .text-overlay3 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffffff;
+            font-size: 35px;
+            font-family: 'Orbitron', sans-serif;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="fixed top-0 z-10 flex w-full items-center justify-between px-6 py-6 text-white sm:px-12">
+        <div class="flex items-center space-x-4" data-svelte-h="svelte-whwhef">
+            <a href="/" class="h-8 w-8 rounded-full bg-white saturate-200"></a>
+        </div> 
+        <div class="flex flex-col text-lg md:flex-row md:space-x-12" style="margin-right: 100px ;"> <!-- Add class nav-links here -->
+            <a href="https://changes.openinterpreter.com/" class="hover:underline nav-links2" data-svelte-h="svelte-13v0mlt">home</a> 
+            <!--  <a href="https://discord.gg/Hvz9Axh84z" class="hover:underline nav-links3" data-svelte-h="svelte-1tesvs7">career</a> -->
+        </div>
+        <div class="flex flex-col text-lg md:flex-row md:space-x-12 nav-links" style="margin-right: 100px;">
+            <a href="https://0ggfznkwh4j.typeform.com/to/WfuYTxMM" class="hover:underline nav-links" data-svelte-h="svelte-1n4njtj">genesis-lite</a>
+            <a href="https://0ggfznkwh4j.typeform.com/to/W5At4fmF" class="rounded border px-2 hover:underline nav-link" data-svelte-h="svelte-16er9ox">technology</a>
+        </div>
+    </nav> 
+
+    <div class="framer-1vnezng" data-framer-name="Subscribe" id="signup" name="Subscribe">
+        <div class="framer-hhlxof" data-framer-name="Container" name="Container">
+            <div class="framer-1t8l6zt">
+                <div class="framer-s0fp84 framer-container" data-framer-component-type="RichTextContainer">
+                    <p class="text-overlay" data-styles-preset="xZndidUCt">want to get in contact?</p>
+                    <p class="text-overlay2" data-styles-preset="xZndidUCt">send an email to:</p>
+                </div>
+            </div>
+
+            <p class="text-overlay3" data-styles-preset="xZndidUCt">toneanmorgan@gmail.com</p>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
